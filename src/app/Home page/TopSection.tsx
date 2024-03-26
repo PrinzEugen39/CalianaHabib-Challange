@@ -10,15 +10,15 @@ export default function TopSection() {
     const intervalWord = setInterval(() => {
       const nextIndex = (words.indexOf(currWord) + 1) % words.length;
       setCurrWord(words[nextIndex]);
-    }, 2500);
+    }, 4000);
 
     return () => clearInterval(intervalWord);
   }, [words, currWord]);
 
   return (
     <section className="flex flex-col gap-6 lg:gap-0 lg:flex-row-reverse">
-      <div className="flex flex-col items-start max-w-3xl mx-auto space-y-2 lg:py-4">
-        <p>
+      <div className="flex flex-col items-start max-w-2xl mx-auto space-y-2 lg:py-4">
+        <p className="text-center lg:text-start">
           <motion.span
             key={currWord}
             className="text-3xl font-bold text-center text-blue-400 lg:text-start lg:text-4xl"
@@ -26,20 +26,16 @@ export default function TopSection() {
             animate={{ fontSize: "40px", opacity: 0.9 }}
             transition={{
               type: "spring",
-              bounce: 0.2,
+              bounce: 0.1,
               duration: 1,
             }}
           >
             {currWord} {""}
           </motion.span>
           <span className="text-3xl font-bold lg:text-4xl text-slate-800">
-            Visitor Management
+            Visitor Management with Caliana!
           </span>
         </p>
-
-        <span className="text-3xl font-bold text-center lg:text-start lg:text-4xl text-slate-800">
-          with Caliana!
-        </span>
 
         <span className="max-w-xl text-sm font-medium text-center lg:text-start lg:text-base text-slate-800">
           Effortlessly manage visitor check-ins, track guest activity, and
