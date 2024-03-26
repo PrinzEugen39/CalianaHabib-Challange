@@ -23,7 +23,7 @@ const formSteps = [
 
 export default function FormCaliana() {
   return (
-    <div className="py-20 bg-gradient-to-r from-cyan-50 via-white to-slate-50">
+    <div className="py-20 bg-gradient-to-r from-cyan-50 via-white to-slate-50" id="kesini">
       <h2 className="pb-20 text-xl font-semibold text-center text-blue-400 lg:text-3xl">
         4 Langkah Mudah Untuk Coba Caliana
       </h2>
@@ -53,7 +53,7 @@ function Steps() {
   return (
     <div className="flex flex-col h-full justify-evenly">
       <section className="flex items-center justify-between">
-        {formSteps.map((step, i) => (
+        {formSteps.map((_, i) => (
           <>
             <div
               key={i}
