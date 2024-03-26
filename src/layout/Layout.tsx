@@ -7,7 +7,7 @@ export default function Layout() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="flex-1 pt-12">
+      <main className="flex-1 pt-24 lg:pt-12">
         <Outlet />
       </main>
       <StickyWhatsapp />
