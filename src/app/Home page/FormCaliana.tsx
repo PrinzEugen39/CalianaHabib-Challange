@@ -33,7 +33,7 @@ export default function FormCaliana() {
           alt="foto"
           className="hidden h-96 lg:block"
         />
-        <div className="max-w-md px-10 bg-white rounded-lg lg:max-w-3xl h-96">
+        <div className="max-w-[22rem] px-4 md:px-10 bg-white rounded-lg lg:max-w-3xl h-96 md:max-w-xl">
           <Steps />
         </div>
         <img
