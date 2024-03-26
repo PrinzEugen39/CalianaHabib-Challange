@@ -20,7 +20,7 @@ export default function Footer() {
 
   return (
     <MaxWidthWrapper className="bg-slate-100">
-      <div className="flex flex-col items-center gap-6 px-4 py-10 lg:gap-0 lg:justify-normal lg:items-start lg:flex-row lg:py-24 xl:px-24">
+      <div className="flex flex-col items-center gap-6 px-4 py-10 lg:gap-0 lg:justify-normal lg:items-start lg:flex-row lg:py-24 lg:px-0 xl:px-24">
         <img src="logoCaliana.svg" alt="logo" className="h-16 lg:h-fit" />
         <footer className="flex flex-col items-center lg:w-full lg:justify-around lg:items-start lg:flex-row">
           <ConnectWithUs />
@@ -40,7 +40,7 @@ export default function Footer() {
 function ConnectWithUs() {
   return (
     <div className="flex flex-col space-y-10 lg:space-y-6 lg:w-1/3">
-      <span className="font-semibold text-center text-blue-400 capitalize">
+      <span className="font-semibold text-center text-blue-400 capitalize lg:text-start">
         connect with us
       </span>
       <div className="flex flex-col space-y-4">
@@ -56,7 +56,7 @@ function ConnectWithUs() {
         })}
       </div>
       <div className="flex flex-col gap-2 pb-10 space-y-4 lg:gap-0">
-        <p className="font-semibold text-center text-blue-400 capitalize">
+        <p className="font-semibold text-center text-blue-400 capitalize lg:text-start">
           Official Whatsapp Number
         </p>
         <div className="flex font-medium gap-x-4 lg:gap-x-2 text-muted-foreground">
@@ -90,7 +90,7 @@ function ProductElements({
 }) {
   return (
     <div className="flex flex-col py-10 space-y-6 lg:py-0">
-      <span className="font-semibold text-center text-blue-400 capitalize lg:text-left">{name}</span>
+      <span className="font-semibold text-center text-blue-400 capitalize lg:text-start">{name}</span>
       <div className="flex flex-col items-center space-y-4 font-medium lg:items-start text-muted-foreground">
         {element?.map((item) => {
           return (
@@ -112,12 +112,12 @@ function OtherElements({
   element?: TCompany[];
 }) {
   return (
-    <div className="flex flex-col py-10 space-y-6">
+    <div className="flex flex-col py-10 space-y-6 lg:py-0">
       <span className="font-semibold text-center text-blue-400 capitalize lg:text-start">{name}</span>
       <div className="flex flex-col items-center space-y-4 font-medium lg:items-start text-muted-foreground">
         {element?.map((item) => {
           return (
-            <Link to={item.href} key={item.href} className="text-sm hover:text-blue-900">
+            <Link to={item.href} key={item.name} className="text-sm hover:text-blue-900">
               {item.name}
             </Link>
           );

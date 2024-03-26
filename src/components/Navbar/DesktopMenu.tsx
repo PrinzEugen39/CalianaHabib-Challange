@@ -21,7 +21,7 @@ export default function DesktopMenu() {
         return link.subLink ? (
           <HoverCard key={link.href} openDelay={150} closeDelay={50}>
             <HoverCardTrigger
-              className={`relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right ${
+              className={`cursor-pointer relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right ${
                 isActive ? "text-blue-500" : "text-slate-800"
               }`}
             >
