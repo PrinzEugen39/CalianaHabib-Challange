@@ -1,10 +1,10 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import TopSection from "./TopSection";
-import Features from "./Features";
-import OurProduct from "./OurProduct";
-import OurIndustry from "./OurIndustry";
-import Testimonial from "./Testimonial";
-import FormCaliana from "./FormCaliana";
+import TopSection from "../../components/HomePage/TopSection";
+import Features from "../../components/HomePage/Features";
+import OurProduct from "../../components/HomePage/OurProduct";
+import OurIndustry from "../../components/HomePage/OurIndustry";
+import Testimonial from "../../components/HomePage/Testimonial";
+import FormCaliana from "../../components/HomePage/FormCaliana";
 
 export default function Home() {
   return (

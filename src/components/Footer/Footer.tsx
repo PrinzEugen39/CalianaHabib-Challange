@@ -19,7 +19,7 @@ export default function Footer() {
   const subLink = navLinks[1]?.subLink || [];
 
   return (
-    <MaxWidthWrapper className="bg-slate-100">
+    <MaxWidthWrapper className="bg-slate-50">
       <div className="flex flex-col items-center gap-6 px-4 py-10 lg:gap-0 lg:justify-normal lg:items-start lg:flex-row lg:py-24 lg:px-0 xl:px-24">
         <img src="logoCaliana.svg" alt="logo" className="h-16 lg:h-fit" />
         <footer className="flex flex-col items-center lg:w-full lg:justify-around lg:items-start lg:flex-row">
