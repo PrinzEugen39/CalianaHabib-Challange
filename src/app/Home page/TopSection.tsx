@@ -16,14 +16,14 @@ export default function TopSection() {
   }, [words, currWord]);
 
   return (
-    <section className="flex flex-col gap-6 lg:gap-0 lg:flex-row-reverse">
-      <div className="flex flex-col items-start max-w-2xl mx-auto space-y-2 lg:py-4">
-        <p className="text-center lg:text-start">
+    <section className="flex flex-col w-full gap-6 md:gap-12 lg:flex-row-reverse">
+      <div className="flex flex-col items-start max-w-2xl gap-2 mx-auto lg:py-4">
+        <p className="tracking-widest text-center lg:text-start">
           <motion.span
             key={currWord}
-            className="text-3xl font-bold text-center text-blue-400 lg:text-start lg:text-4xl"
-            initial={{ fontSize: "60px", opacity: 0 }}
-            animate={{ fontSize: "40px", opacity: 0.9 }}
+            className="font-bold text-center text-blue-400 lg:text-start"
+            initial={{ fontSize: "34px", opacity: 0 }}
+            animate={{ fontSize: "33px", opacity: 0.9 }}
             transition={{
               type: "spring",
               bounce: 0.1,
@@ -32,7 +32,7 @@ export default function TopSection() {
           >
             {currWord} {""}
           </motion.span>
-          <span className="text-3xl font-bold lg:text-4xl text-slate-800">
+          <span className="text-2xl font-bold lg:text-3xl text-slate-800">
             Visitor Management with Caliana!
           </span>
         </p>
@@ -46,12 +46,14 @@ export default function TopSection() {
           <Button className="bg-blue-400">Simulasi Disini</Button>
         </div>
       </div>
-      <div className="lg:w-[800px] rounded-3xl border-8 border-gray-300 shadow-xl">
+
+      <div className="lg:w-[720px] rounded-3xl border-8 border-gray-300 shadow-xl">
         <video autoPlay muted loop>
           <source src="CalianaVideo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
+
       <div className="text-center lg:hidden">
         <Button className="bg-blue-400">Simulasi Disini</Button>
       </div>

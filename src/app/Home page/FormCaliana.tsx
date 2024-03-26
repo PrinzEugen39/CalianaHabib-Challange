@@ -5,9 +5,9 @@ export default function FormCaliana() {
         4 Langkah Mudah Untuk Coba Caliana
       </h2>
       <div className="flex items-center justify-center">
-        <img src="featureImages/business-deal1.png" alt="foto" className="h-96" />
+        <img src="featureImages/business-deal1.png" alt="foto" className="hidden h-96 lg:block" />
         <div className="bg-white rounded-lg size-96">a</div>
-        <img src="featureImages/business-deal2.png" alt="foto" className="h-96"/>
+        <img src="featureImages/business-deal2.png" alt="foto" className="hidden h-96 lg:block"/>
       </div>
     </div>
   );
