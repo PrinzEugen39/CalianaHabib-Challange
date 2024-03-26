@@ -22,8 +22,8 @@ export default function TopSection() {
           <motion.span
             key={currWord}
             className="text-blue-400"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={{ fontSize: "60px" }}
+            animate={{ fontSize: "42px" }}
             transition={{
               type: "spring",
               bounce: 0.5,
