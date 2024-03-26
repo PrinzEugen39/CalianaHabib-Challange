@@ -17,22 +17,28 @@ export default function TopSection() {
 
   return (
     <section className="flex flex-col gap-6 lg:gap-0 lg:flex-row-reverse">
-      <div className="flex flex-col items-start max-w-2xl mx-auto space-y-2 lg:py-4">
-        <span className="text-3xl font-bold text-center lg:text-start lg:text-4xl text-slate-800">
+      <div className="flex flex-col items-start max-w-3xl mx-auto space-y-2 lg:py-4">
+        <p>
           <motion.span
             key={currWord}
-            className="text-blue-400"
-            initial={{ fontSize: "60px" }}
-            animate={{ fontSize: "42px" }}
+            className="text-3xl font-bold text-center text-blue-400 lg:text-start lg:text-4xl"
+            initial={{ fontSize: "60px", opacity: 0 }}
+            animate={{ fontSize: "40px", opacity: 0.9 }}
             transition={{
               type: "spring",
-              bounce: 0.5,
-              duration: 0.7,
+              bounce: 0.2,
+              duration: 1,
             }}
           >
             {currWord} {""}
           </motion.span>
-          Visitor Management with Caliana!
+          <span className="text-3xl font-bold lg:text-4xl text-slate-800">
+            Visitor Management
+          </span>
+        </p>
+
+        <span className="text-3xl font-bold text-center lg:text-start lg:text-4xl text-slate-800">
+          with Caliana!
         </span>
 
         <span className="max-w-xl text-sm font-medium text-center lg:text-start lg:text-base text-slate-800">
