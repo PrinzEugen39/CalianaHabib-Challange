@@ -15,6 +15,15 @@ export default function TopSection() {
     return () => clearInterval(intervalWord);
   }, [words, currWord]);
 
+  function handleClick(event: React.MouseEvent<HTMLButtonElement>) {
+    event.preventDefault();
+
+    const element = document.getElementById("kesini");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   return (
     <section className="flex flex-col w-full gap-6 md:gap-12 lg:flex-row-reverse">
       <div className="flex flex-col items-start max-w-2xl gap-2 mx-auto lg:py-4">
@@ -43,7 +52,7 @@ export default function TopSection() {
         </span>
 
         <div className="hidden lg:block">
-          <Button className="bg-blue-400">Simulasi Disini</Button>
+          <Button className="bg-blue-400" onClick={handleClick}>Simulasi Disini</Button>
         </div>
       </div>
 
@@ -55,7 +64,7 @@ export default function TopSection() {
       </div>
 
       <div className="text-center lg:hidden">
-        <Button className="bg-blue-400">Simulasi Disini</Button>
+        <Button className="bg-blue-400" onClick={handleClick}>Simulasi Disini</Button>
       </div>
     </section>
   );
