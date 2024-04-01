@@ -7,10 +7,10 @@ export default function OurProduct() {
       <p className="text-3xl font-semibold text-center text-blue-400 mb-28">
         Produk Kami
       </p>
-      <div className="flex gap-6 py-24 justify-evenly lg:gap-0 bg-slate-50 rounded-3xl">
+      <div className="flex flex-col items-center py-24 gap-y-32 lg:flex-row lg:items-start justify-evenly lg:gap-0 bg-slate-50 rounded-3xl">
         {calianaProducts.map((product) => (
           <div
-            className={`max-w-3xl shadow-xl size-80 px-4 rounded-xl lg:mt-10`}
+            className={`shadow-xl lg:size-72 xl:size-80 px-4 rounded-xl lg:mt-10`}
             key={product.title}
           >
             <div
